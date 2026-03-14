@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ideal Kit - Home</title>
+  <link rel="stylesheet" href="style-home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    ✨ Special Offer: 5% OFF over Rs. 1000 | 20% OFF over Rs. 12,000! ✨
+  </div>
+
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+      <img src="logo.png" alt="The Ideal Kit Logo">
+      <h1>The Ideal Kit</h1>
+    </a>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search for books or stationery...">
+      <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="nav-icons">
+      <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+      <a href="cart.html" class="cart-link">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" class="cart-badge">0</span>
+      </a>
+      <a href="contact.html" class="contact-btn">Contact Us</a>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to The Ideal Kit</h2>
+      <p>Your one-stop shop for books, stationery & more!</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Shop by Categories</h2>
+    <div class="category-container">
+      <a href="category.html?type=books" class="category-card">
+        <i class="fas fa-book"></i>
+        <p>Books</p>
+      </a>
+      <a href="category.html?type=stationery" class="category-card">
+        <i class="fas fa-pencil-alt"></i>
+        <p>Stationery</p>
+      </a>
+      <a href="category.html?type=notebooks" class="category-card">
+        <i class="fas fa-book-open"></i>
+        <p>Notebooks</p>
+      </a>
+      <a href="category.html?type=art-supplies" class="category-card">
+        <i class="fas fa-paint-brush"></i>
+        <p>Art Supplies</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products" id="products">
+    <h2 id="products-title">Featured Products</h2>
+    <div class="product-grid">
+
+      <!-- Each product has data attributes for cart -->
+      <div class="product-card" data-id="1"
+     data-name="Learn Python" data-category="books"
+     data-price="450" data-image="https://m.media-amazon.com/images/I/81dB5mZhMhL._UF1000,1000_QL80_.jpg">
+        <img src="https://m.media-amazon.com/images/I/81dB5mZhMhL._UF1000,1000_QL80_.jpg" alt="Python">
+        <h3>Learn Python</h3>
+        <p>Rs. 450</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+     <div class="product-card" data-id="2" data-name="Learn Java" data-category="books" data-price="500" data-image="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4842-0713-0">
+        <img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4842-0713-0" alt="Java">
+        <h3>Learn Java</h3>
+        <p>Rs. 500</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="3" data-name="Learn HTML" data-category="books" data-price="350" data-image="https://ik.imagekit.io/deciphered/websites/phpandmysql/series/tr:w-400,h-250,f-auto/stack-html.jpg">
+        <img src="https://ik.imagekit.io/deciphered/websites/phpandmysql/series/tr:w-400,h-250,f-auto/stack-html.jpg" alt="HTML">
+        <h3>Learn HTML</h3>
+        <p>Rs. 350</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="4" data-name="Learn Database" data-category="books" data-price="550" data-image="https://www.oreilly.com/covers/urn:orm:book:9781492057604/400w/">
+        <img src="https://www.oreilly.com/covers/urn:orm:book:9781492057604/400w/" alt="Database">
+        <h3>Learn Database</h3>
+        <p>Rs. 550</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="5" data-name="Programming with Java" data-category="books" data-price="3000" data-image="https://covers.openlibrary.org/b/id/10599410-M.jpg">
+        <img src="https://covers.openlibrary.org/b/id/10599410-M.jpg" alt="Notebook">
+        <h3>Programming with Java</h3>
+        <p>Rs. 3000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="6" data-name="Misery" data-category="books" data-price="3000" data-image="https://covers.openlibrary.org/b/id/15151485-M.jpg">
+        <img src="https://covers.openlibrary.org/b/id/15151485-M.jpg" alt="Notebook">
+        <h3>Misery</h3>
+        <p>Rs. 3000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="11" data-name="Spiral Notebook" data-category="notebooks" data-price="150" data-image="https://as2.ftcdn.net/v2/jpg/00/05/86/25/1000_F_5862533_wQ6IJRVm6vLtub3aqirHc0AsUK3EfloS.jpg">
+        <img src="https://as2.ftcdn.net/v2/jpg/00/05/86/25/1000_F_5862533_wQ6IJRVm6vLtub3aqirHc0AsUK3EfloS.jpg" alt="Notebook">
+        <h3>Spiral Notebook</h3>
+        <p>Rs. 150</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="12" data-name="Pens" data-category="stationery" data-price="200" data-image="https://m.media-amazon.com/images/I/61spO1JMk5L._AC_SL6000_.jpg">
+        <img src="https://m.media-amazon.com/images/I/61spO1JMk5L._AC_SL6000_.jpg" alt="Pens">
+        <h3>Pens</h3>
+        <p>Rs. 200</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="13"  data-name="Pencils" data-category="stationery" data-price="80" data-image="https://m.media-amazon.com/images/I/81+F8TswxWL._UF1000,1000_QL80_.jpg">
+        <img src="https://static-01.daraz.com.np/p/b5a40e5faa54e22229c90cae05e46e30.jpg" alt="Pencils">
+        <h3>Pencils</h3>
+        <p>Rs. 80</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="14" data-name="Colours" data-category="art-supplies" data-price="600" data-image="https://m.media-amazon.com/images/I/81+F8TswxWL._UF1000,1000_QL80_.jpg" >
+        <img src="https://m.media-amazon.com/images/I/81+F8TswxWL._UF1000,1000_QL80_.jpg" alt="Colours">
+        <h3>Colours</h3>
+        <p>Rs. 600</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+ <!-- Upcoming Products --> <section class="upcoming"> <h2>Upcoming Products</h2> <div class="upcoming-grid"> <div class="upcoming-card"> <img src="https://www.artshedonline.com.au/assets/full/MMPM0062.jpg?20230601145409" alt="Markers"> <h3>Coming Soon: Markers</h3> <p>Launching soon...</p> </div> <div class="upcoming-card"> <img src="https://m.media-amazon.com/images/I/71-o8p4kyWL._UF1000,1000_QL80_.jpg " alt="Sketch Pads"> <h3>Coming Soon: Sketch Pads</h3> <p>Launching soon...</p> </div> <div class="upcoming-card"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk9yZYC5wqnHL0Xw_j5g-aCzATKSChoqQSaw&s" alt="Advanced Python"> <h3>Coming Soon: Advanced Python</h3> <p>Launching soon...</p> </div> </div> </section>
+
+  <!-- ✅ Connect JS -->
+  <script src="cart.js" defer></script>
+  <script src="index.js" defer></script>
+
+  <!-- Footer --> 
+   <footer>
+     <p>&copy; 2025 The Ideal Kit | All Rights Reserved</p> 
+     <p>Contact: <a href="mailto:theidealkit@gmail.com" style="color: inherit; text-decoration: none;">theidealkit@gmail.com</a> | <a href="tel:+9779766049413" style="color: inherit; text-decoration: none;">+977-9766049413</a></p> 
+    </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="go-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script>
+    window.addEventListener("scroll", () => {
+      const goTopBtn = document.querySelector(".go-top-btn");
+      if (goTopBtn) {
+        if (window.scrollY > 300) {
+          goTopBtn.classList.add("show");
+        } else {
+          goTopBtn.classList.remove("show");
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

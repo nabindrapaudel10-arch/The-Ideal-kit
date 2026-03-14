@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Ideal Kit — Cart</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="cart.css" />
+</head>
+
+<body>
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    ✨ Special Offer: 5% OFF over Rs. 1000 | 20% OFF over Rs. 12,000! ✨
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+      <img src="logo.png" alt="The Ideal Kit Logo">
+      <h1>The Ideal Kit</h1>
+    </a>
+    <div class="nav-icons">
+      <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+      <a href="cart.html" class="cart-link" title="Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" class="cart-badge">0</span>
+      </a>
+      <a href="contact.html" class="contact-btn">Contact Us</a>
+    </div>
+  </header>
+
+  <a href="index.html" class="back-btn">← </a>
+
+  <!-- Cart Page -->
+  <main class="cart-page">
+    <!-- Left: Cart Items -->
+    <section class="cart-left">
+      <h1>Your Cart</h1>
+      <div id="cart-items" class="cart-items"></div>
+    </section>
+
+    <!-- Right: Summary -->
+    <aside class="cart-right">
+      <h2>Order Summary</h2>
+      <div class="summary-line">
+        <span>Subtotal:</span>
+        <span>Rs. <span id="summary-subtotal">0</span></span>
+      </div>
+      <div class="summary-line">
+        <span>Shipping:</span>
+        <span>Rs. <span id="summary-shipping">150</span></span>
+      </div>
+      <div class="summary-line">
+        <span>Discount:</span>
+        <span>- Rs. <span id="summary-discount">0</span></span>
+      </div>
+      <hr />
+      <div class="summary-line total">
+        <span>Total:</span>
+        <strong>Rs. <span id="cart-total">0</span></strong>
+      </div>
+
+      <!-- Checkout Details Form -->
+      <div class="checkout-form-container">
+        <h3>Delivery Details</h3>
+        <form id="checkout-form" class="checkout-form">
+          <input type="text" id="cust-name" placeholder="Full Name" required>
+          <input type="text" id="cust-address" placeholder="Delivery Address" required>
+          <input type="text" id="cust-phone" placeholder="Phone Number" required>
+          <select id="payment-method" required>
+            <option value="" disabled selected>Select Payment Method</option>
+            <option value="cod">Cash on Delivery</option>
+            <option value="bank">Bank Transfer</option>
+            <option value="esewa">eSewa / Khalti</option>
+            <option value="ips">ConnectIPS</option>
+          </select>
+        </form>
+      </div>
+
+      <!-- Buttons -->
+      <button id="checkout-btn" class="checkout">Simulate Demo Checkout</button>
+      <button id="clear-btn" class="clear">Clear Cart</button>
+    </aside>
+  </main>
+
+<!-- Payment Methods -->
+<section class="payment-row">
+  <h3>Methods of Payment</h3>
+  <div class="payment-icons" style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+    <img src="https://cdn-icons-png.flaticon.com/512/1554/1554406.png" alt="Cash on Delivery" title="Cash on Delivery" style="height: 45px; object-fit: contain;">
+    <img src="https://cdn-icons-png.flaticon.com/512/2830/2830284.png" alt="Bank Transfer" title="Bank Transfer" style="height: 45px; object-fit: contain;">
+    <img src="https://esewa.com.np/common/images/esewa_logo.png" alt="eSewa" title="eSewa" style="height: 40px; border-radius: 4px; object-fit: contain;">
+    <img src="https://blog.khalti.com/wp-content/uploads/2021/01/khalti-icon.png" alt="Khalti" title="Khalti" style="height: 40px; border-radius: 4px; object-fit: contain;">
+    <img src="https://www.connectips.com/images/connectips-logo.png" alt="ConnectIPS" title="ConnectIPS" style="height: 40px; border-radius: 4px; object-fit: contain;">
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 The Ideal Kit | All Rights Reserved</p>
+    <p>Contact: <a href="mailto:theidealkit@gmail.com" style="color: inherit; text-decoration: none;">theidealkit@gmail.com</a> | <a href="tel:+9779766049413" style="color: inherit; text-decoration: none;">+977-9766049413</a></p>
+  </footer>
+
+  
+
+  <script src="cart.js" defer></script>
+
+  <!-- Scroll to Top Button -->
+  <button class="go-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    window.addEventListener("scroll", () => {
+      const goTopBtn = document.querySelector(".go-top-btn");
+      if (goTopBtn) {
+        if (window.scrollY > 300) {
+          goTopBtn.classList.add("show");
+        } else {
+          goTopBtn.classList.remove("show");
+        }
+      }
+    });
+  </script>
+</body>
+</html>

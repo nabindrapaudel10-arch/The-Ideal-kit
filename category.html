@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ideal Kit - Categories</title>
+  <link rel="stylesheet" href="style-home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    ✨ Special Offer: 5% OFF over Rs. 1000 | 20% OFF over Rs. 12,000! ✨
+  </div>
+
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+      <img src="logo.png" alt="The Ideal Kit Logo">
+      <h1>The Ideal Kit</h1>
+    </a>
+    <div class="nav-icons">
+      <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+      <a href="cart.html" class="cart-link">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" class="cart-badge">0</span>
+      </a>
+      <a href="contact.html" class="contact-btn">Contact Us</a>
+    </div>
+  </header>
+
+  <a href="index.html" class="back-btn">←</a>
+
+  <section class="products">
+    <h2 id="category-title">Category Products</h2>
+    <div class="product-grid" id="category-products">
+      <!-- Products will be dynamically loaded here -->
+    </div>
+  </section>
+  <!-- ✅ Connect JS -->
+  <script src="cart.js" defer></script>
+  <script src="category.js" defer></script>
+
+  <!-- Footer --> 
+  <footer>
+    <p>&copy; 2025 The Ideal Kit | All Rights Reserved</p> 
+    <p>Contact: <a href="mailto:theidealkit@gmail.com" style="color: inherit; text-decoration: none;">theidealkit@gmail.com</a> | <a href="tel:+9779766049413" style="color: inherit; text-decoration: none;">+977-9766049413</a></p> 
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="go-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script>
+    window.addEventListener("scroll", () => {
+      const goTopBtn = document.querySelector(".go-top-btn");
+      if (goTopBtn) {
+        if (window.scrollY > 300) {
+          goTopBtn.classList.add("show");
+        } else {
+          goTopBtn.classList.remove("show");
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
